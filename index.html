@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Gestos com as mãos! ^_^</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+    
+      <center>
+        <h3 class="btn btn-success heading">Aplicativo de gestos com as mãos!! ૮ ˶ᵔ ᵕ ᵔ˶ ა </h3>
+
+        <br><br>
+
+      <p style="font-size: 22px;">Tire uma foto mostrando suas mãos! Se sinta livre para fazer gestos com elas! ꒰ᐢ. .ᐢ꒱₊˚⊹
+      	<br>
+        <b style="color: lightgreen">Tá jóia?</b>
+        <br>
+        <b style="color: lightskyblue">Tá na paz?</b>
+        <br>
+        <b style="color: lightcoral">Tá de boa?</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>୨♡୧⋆ ˚｡⋆Visualização da Webcam:</label>
+      <div id="camera"></div>
+      <br><br>
+      <button onclick="takeSnapshot();" class="btn btn-info">Capturar Imagem !! ≽^•⩊•^≼ </button>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Seu gesto 1: </label>
+      <p class="gestureName" id="resultGestureName"></p>
+      <p class="hand" id="updateHand"></p>
+
+      <label>Seu gesto 2: </label>
+        <p class="gestureName" id="resultGestureName2"></p>
+        <p class="hand" id="updateHand2"></p>
+        </div>
+      
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>⋆˚🐾˖°Foto: </label>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="check();" class="btn btn-warning">Prever seus gestos!! ૮₍´˶• . • ⑅ ₎ა</button>
+          </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+          
+       
